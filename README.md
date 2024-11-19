@@ -1,5 +1,5 @@
 # 💫 About Me:
-🔭 I’m currently working on Python<br>
+🔭 I’m currently chilling<br>
 
 
 ## 🌐 Socials:
