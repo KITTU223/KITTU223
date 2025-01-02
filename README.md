@@ -1,5 +1,5 @@
 # 💫 About Me:
-🔭 I’m currently chilling<br>
+🔭 I’m currently Learn React Native<br>
 
 
 ## 🌐 Socials:
