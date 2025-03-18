@@ -18,19 +18,5 @@
 ### 🔝 Top Contributed Repo
 ![](https://github-contributor-stats.vercel.app/api?username=Kittu223&limit=5&theme=radical&combine_all_yearly_contributions=true)
 
-<details open>
-<summary><h2>🐍 My Contributions 🐍</h2></summary>
-<div align="center">
-  <br>
-  <img alt="snake eating my contributions" src="https://raw.githubusercontent.com/Kittu223/Kittu223/output/github-contribution-grid-snake.svg" />
-  
-  <br/><br/><br/>
-</div>
-</details>
-
-
-### 😂 Random Dev Meme
-<img src='https://memer-new.vercel.app/' style="height: 400px;"/>
-
 ---
 [![](https://visitcount.itsvg.in/api?id=Kittu223&icon=5&color=6)](https://visitcount.itsvg.in)
