@@ -1,5 +1,5 @@
 # 💫 About Me:
-🔭 I’m currently Learn React Native<br>
+🔭 I’m currently Learn Typescript<br>
 
 
 ## 🌐 Socials:
