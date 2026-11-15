@@ -1,8 +1,26 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="64" viewBox="0 0 1200 64" role="img" aria-labelledby="title desc">
-  <title id="title">Racing circuit divider</title>
-  <desc id="desc">A fine racing-red line with a minimalist abstract circuit and timing markers.</desc>
-  <path d="M0 32h340c18 0 22-22 42-22h40c18 0 24 22 44 22h218c18 0 22 22 42 22h42c18 0 22-22 42-22h390" fill="none" stroke="#E10600" stroke-width="2"/>
-  <path d="M0 32h340c18 0 22-22 42-22h40c18 0 24 22 44 22h218c18 0 22 22 42 22h42c18 0 22-22 42-22h390" fill="none" stroke="#E10600" stroke-width="1" stroke-dasharray="4 12" opacity=".55"/>
-  <circle cx="0" cy="32" r="5" fill="#E10600"/><circle cx="1200" cy="32" r="5" fill="#E10600"/>
-  <g fill="#8B8D98"><circle cx="228" cy="32" r="2"/><circle cx="820" cy="32" r="2"/><circle cx="1044" cy="32" r="2"/></g>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="40" viewBox="0 0 1280 40" role="img" aria-label="Racing circuit divider">
+  <title>Racing circuit divider</title>
+  <!-- Transparent background: colours chosen to read on GitHub light and dark themes -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M0 20 H520" stroke="#8B8D98" stroke-opacity="0.45" stroke-width="2"/>
+    <path d="M760 20 H1180" stroke="#8B8D98" stroke-opacity="0.45" stroke-width="2"/>
+    <path d="M0 20 H180" stroke="#E10600" stroke-width="3"/>
+    <!-- chicane -->
+    <path d="M520 20 C548 20 552 6 580 6 H612 C632 6 632 34 652 34 H690 C716 34 714 20 760 20" stroke="#E10600" stroke-width="3"/>
+  </g>
+  <circle cx="612" cy="6" r="3.5" fill="#E10600"/>
+  <!-- kerb ticks -->
+  <g fill="#E10600">
+    <rect x="200" y="17" width="10" height="6" transform="skewX(-20)"/>
+    <rect x="218" y="17" width="10" height="6" transform="skewX(-20)" fill="#8B8D98"/>
+    <rect x="236" y="17" width="10" height="6" transform="skewX(-20)"/>
+  </g>
+  <!-- chequered block -->
+  <g transform="translate(1196 8)">
+    <rect width="72" height="24" fill="none" stroke="#8B8D98" stroke-opacity="0.6"/>
+    <g fill="#8B8D98">
+      <rect x="0" y="0" width="12" height="12"/><rect x="24" y="0" width="12" height="12"/><rect x="48" y="0" width="12" height="12"/>
+      <rect x="12" y="12" width="12" height="12"/><rect x="36" y="12" width="12" height="12"/><rect x="60" y="12" width="12" height="12"/>
+    </g>
+  </g>
 </svg>

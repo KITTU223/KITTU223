@@ -1,9 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="140" height="140" viewBox="0 0 140 140" role="img" aria-labelledby="title desc">
-  <title id="title">Race number 12</title>
-  <desc id="desc">Krutonic driver number 12 in a red motorsport badge.</desc>
-  <path d="M10 10h88l32 32v88H10z" fill="#E10600"/>
-  <path d="M98 10v32h32" fill="#A80400"/>
-  <path d="M23 23h69l25 25v69H23z" fill="none" stroke="#FFFFFF" stroke-opacity=".45"/>
-  <text x="28" y="91" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="61" font-weight="800">12</text>
-  <text x="31" y="111" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="700" letter-spacing="2">DRIVER</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="260" viewBox="0 0 220 260" role="img" aria-label="Race number 12, team Krutonic">
+  <title>Race number 12 · Krutonic</title>
+  <defs>
+    <pattern id="cw" width="6" height="6" patternUnits="userSpaceOnUse">
+      <rect width="6" height="6" fill="#0B0B0D"/>
+      <rect width="3" height="3" fill="#121215"/>
+      <rect x="3" y="3" width="3" height="3" fill="#121215"/>
+    </pattern>
+    <clipPath id="card"><rect width="220" height="260" rx="14"/></clipPath>
+  </defs>
+  <g clip-path="url(#card)">
+    <rect width="220" height="260" fill="url(#cw)"/>
+    <!-- livery slash -->
+    <path d="M150 0 H220 L132 200 H62 Z" fill="#E10600" opacity="0.92"/>
+    <path d="M190 0 H202 L114 200 H102 Z" fill="#FFFFFF" opacity="0.9"/>
+  </g>
+  <rect x="0.5" y="0.5" width="219" height="259" rx="14" fill="none" stroke="#FFFFFF" stroke-opacity="0.12"/>
+
+  <text x="20" y="34" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-weight="700" font-size="11" letter-spacing="3" fill="#8B8D98">CAR</text>
+  <text x="108" y="178" text-anchor="middle" font-family="'Arial Black','Segoe UI Black','Helvetica Neue',Arial,sans-serif" font-weight="900" font-style="italic" font-size="132" fill="#FFFFFF" stroke="#0B0B0D" stroke-width="4" paint-order="stroke">12</text>
+
+  <rect x="20" y="206" width="180" height="1" fill="#FFFFFF" opacity="0.15"/>
+  <text x="20" y="230" font-family="'Arial Black','Segoe UI Black',Arial,sans-serif" font-weight="900" font-style="italic" font-size="16" letter-spacing="2" fill="#FFFFFF">KRUTONIC</text>
+  <text x="20" y="246" font-family="Consolas,'SFMono-Regular',Menlo,monospace" font-size="9" letter-spacing="1.5" fill="#8B8D98">CHAUHAN · IND</text>
 </svg>

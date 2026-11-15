@@ -1,52 +1,136 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430" role="img" aria-labelledby="title desc">
-  <title id="title">Krutarth Chauhan — Krutonic Motorsport Division</title>
-  <desc id="desc">A carbon-black motorsport engineering dashboard with racing-red accents, telemetry details, number 12, and an abstract circuit line.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="440" viewBox="0 0 1280 440" role="img" aria-labelledby="title desc">
+  <title id="title">Krutarth Chauhan — Full-Stack Developer | Creative Engineer</title>
+  <desc id="desc">Krutonic Motorsport Division paddock banner with a racing circuit, car number 12 and a telemetry strip.</desc>
+
   <defs>
-    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
-      <path d="M36 0H0V36" fill="none" stroke="#FFFFFF" stroke-opacity=".055" stroke-width="1"/>
+    <!-- carbon weave -->
+    <pattern id="carbon" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="#0B0B0D"/>
+      <rect width="4" height="4" fill="#111114"/>
+      <rect x="4" y="4" width="4" height="4" fill="#111114"/>
     </pattern>
-    <linearGradient id="fade" x1="0" x2="1" y1="0" y2="1">
-      <stop offset="0" stop-color="#0B0B0D"/>
-      <stop offset="1" stop-color="#17171C"/>
+    <!-- paddock grid -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#FFFFFF" stroke-opacity="0.035" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="fadeRight" x1="0" x2="1">
+      <stop offset="0" stop-color="#0B0B0D" stop-opacity="0"/>
+      <stop offset="1" stop-color="#0B0B0D" stop-opacity="0.85"/>
     </linearGradient>
-    <linearGradient id="redline" x1="0" x2="1">
-      <stop offset="0" stop-color="#E10600" stop-opacity=".12"/>
-      <stop offset=".55" stop-color="#E10600"/>
-      <stop offset="1" stop-color="#E10600" stop-opacity=".22"/>
+    <linearGradient id="speed" x1="0" x2="1">
+      <stop offset="0" stop-color="#E10600" stop-opacity="0"/>
+      <stop offset="0.6" stop-color="#E10600" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.9"/>
     </linearGradient>
+    <linearGradient id="speedGray" x1="0" x2="1">
+      <stop offset="0" stop-color="#8B8D98" stop-opacity="0"/>
+      <stop offset="1" stop-color="#8B8D98" stop-opacity="0.6"/>
+    </linearGradient>
+    <path id="circuit" d="M990 112 L1150 96 Q1204 92 1208 140 L1212 196 Q1214 228 1186 238 L1124 258 Q1094 268 1104 296 L1112 318 Q1120 346 1090 346 L1004 346 Q972 346 968 316 L958 244 Q955 216 980 206 L1030 186 Q1052 176 1036 160 L992 148 Q962 138 990 112 Z"/>
+
+    <clipPath id="frame"><rect width="1280" height="440" rx="14"/></clipPath>
+    <style>
+      .speed { stroke-dasharray: 140 520; animation: rush 1.8s linear infinite; }
+      .s2 { animation-duration: 2.4s; animation-delay: -0.7s; }
+      .s3 { animation-duration: 1.4s; animation-delay: -1.1s; }
+      .s4 { animation-duration: 2.9s; animation-delay: -0.3s; }
+      @keyframes rush { from { stroke-dashoffset: 0; } to { stroke-dashoffset: -660; } }
+      .blink { animation: blink 1.2s steps(2, start) infinite; }
+      @keyframes blink { to { visibility: hidden; } }
+      @media (prefers-reduced-motion: reduce) {
+        .speed, .blink { animation: none; }
+      }
+      .head  { font-family: 'Arial Black', 'Segoe UI Black', 'Helvetica Neue', Arial, sans-serif; font-weight: 900; font-style: italic; }
+      .label { font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; font-weight: 700; letter-spacing: 4px; }
+      .mono  { font-family: Consolas, 'SFMono-Regular', Menlo, 'Courier New', monospace; font-weight: 700; }
+    </style>
   </defs>
-  <rect width="1200" height="430" rx="18" fill="url(#fade)"/>
-  <rect width="1200" height="430" rx="18" fill="url(#grid)"/>
-  <path d="M0 26H1200" stroke="#E10600" stroke-width="5"/>
-  <g stroke="#FFFFFF" stroke-opacity=".18" stroke-width="2">
-    <path d="M824 76h78M860 91h112M826 106h54M901 121h68M844 136h104"/>
-    <path d="M30 354h102M55 367h61M31 380h84"/>
+
+  <g clip-path="url(#frame)">
+  <!-- base -->
+  <rect width="1280" height="440" rx="14" fill="url(#carbon)"/>
+  <rect width="1280" height="440" rx="14" fill="url(#grid)"/>
+
+  <!-- ghost race number -->
+  <text x="1250" y="330" text-anchor="end" class="head" font-size="300" fill="none" stroke="#FFFFFF" stroke-opacity="0.05" stroke-width="2">12</text>
+
+  <!-- speed lines -->
+  <g stroke-linecap="round" fill="none">
+    <line class="speed"    x1="-40" y1="300" x2="620" y2="300" stroke="url(#speed)" stroke-width="2"/>
+    <line class="speed s2" x1="-40" y1="314" x2="620" y2="314" stroke="url(#speedGray)" stroke-width="1"/>
+    <line class="speed s3" x1="-40" y1="88"  x2="620" y2="88"  stroke="url(#speedGray)" stroke-width="1"/>
+    <line class="speed s4" x1="300" y1="328" x2="960" y2="328" stroke="url(#speed)" stroke-width="1"/>
   </g>
-  <g fill="#8B8D98" font-family="Arial, Helvetica, sans-serif" font-size="11" letter-spacing="2">
-    <text x="52" y="65">KRUTONIC MOTORSPORT DIVISION</text>
-    <text x="52" y="396">FULL-STACK ENGINEERING  /  GUJARAT, INDIA</text>
-    <text x="864" y="66">ENGINEERING // 01</text>
-    <text x="1022" y="396">KRT-12  •  EST. IN CODE</text>
+
+  <!-- top rail -->
+  <rect x="0" y="0" width="1280" height="4" fill="#E10600"/>
+  <rect x="56" y="46" width="6" height="22" fill="#E10600" transform="skewX(-18)"/>
+  <rect x="68" y="46" width="6" height="22" fill="#FFFFFF" transform="skewX(-18)"/>
+  <text x="92" y="64" class="label" font-size="14" fill="#8B8D98">KRUTONIC MOTORSPORT DIVISION</text>
+  <text x="92" y="64" class="label" font-size="14" fill="#8B8D98" dx="355" opacity="0.5">/ FULL-STACK ENGINEERING</text>
+
+  <!-- race number chip -->
+  <g transform="translate(1146 40)">
+    <path d="M10 0 H84 L74 32 H0 Z" fill="#E10600"/>
+    <text x="42" y="25" text-anchor="middle" class="head" font-size="22" fill="#FFFFFF">#12</text>
   </g>
-  <path d="M52 82h286" stroke="#E10600" stroke-width="2"/>
-  <text x="48" y="174" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="800" letter-spacing="1">KRUTARTH</text>
-  <text x="48" y="232" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="800" letter-spacing="1">CHAUHAN</text>
-  <path d="M52 254h495" stroke="#E10600" stroke-width="4"/>
-  <text x="54" y="286" fill="#D7D7DC" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" letter-spacing="2">FULL-STACK DEVELOPER  |  CREATIVE ENGINEER</text>
-  <text x="54" y="328" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="15">“Writing code at full throttle. Debugging under the safety car.”</text>
-  <g transform="translate(1004 160)">
-    <path d="M0 20h82l27 27v111H0z" fill="#E10600"/>
-    <path d="M82 20v27h27" fill="#A80400"/>
-    <text x="12" y="112" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="76" font-weight="800">12</text>
-    <text x="14" y="141" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="700" letter-spacing="2">DRIVER</text>
+
+  <!-- title block -->
+  <text x="64" y="176" class="head" font-size="64" fill="#FFFFFF" letter-spacing="1">KRUTARTH <tspan fill="#E10600">CHAUHAN</tspan></text>
+  <rect x="68" y="196" width="120" height="4" fill="#E10600"/>
+  <rect x="194" y="196" width="28" height="4" fill="#FFFFFF"/>
+  <text x="66" y="236" class="label" font-size="18" fill="#FFFFFF" letter-spacing="5">FULL-STACK DEVELOPER <tspan fill="#E10600">|</tspan> CREATIVE ENGINEER</text>
+  <text x="66" y="276" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="20" fill="#8B8D98">“Writing code at full throttle. Debugging under the safety car.”</text>
+
+  <!-- circuit -->
+  <use href="#circuit" fill="none" stroke="#1C1C21" stroke-width="16" stroke-linejoin="round"/>
+  <use href="#circuit" fill="none" stroke="#8B8D98" stroke-opacity="0.55" stroke-width="2" stroke-linejoin="round"/>
+  <use href="#circuit" fill="none" stroke="#E10600" stroke-width="2.5" stroke-linejoin="round" stroke-dasharray="60 1400">
+    <animate attributeName="stroke-dashoffset" from="0" to="-1460" dur="4s" repeatCount="indefinite"/>
+  </use>
+  <!-- start / finish -->
+  <g transform="translate(1070 96)">
+    <rect x="0" y="-10" width="4" height="4" fill="#FFFFFF"/><rect x="4" y="-6" width="4" height="4" fill="#FFFFFF"/>
+    <rect x="0" y="-2" width="4" height="4" fill="#FFFFFF"/><rect x="4" y="2" width="4" height="4" fill="#FFFFFF"/>
+    <rect x="0" y="6" width="4" height="4" fill="#FFFFFF"/>
   </g>
-  <path d="M784 318c-8-35 22-50 47-42 29 9 18 42 46 48 32 7 39-27 21-43-17-15-44 1-41 22 4 25 43 20 61 5 19-17 1-44 20-58 18-13 48-5 49 17 1 17-11 27-27 28" fill="none" stroke="#FFFFFF" stroke-opacity=".8" stroke-width="3"/>
-  <path d="M784 318c-8-35 22-50 47-42 29 9 18 42 46 48 32 7 39-27 21-43-17-15-44 1-41 22 4 25 43 20 61 5 19-17 1-44 20-58 18-13 48-5 49 17 1 17-11 27-27 28" fill="none" stroke="#E10600" stroke-width="1" stroke-dasharray="3 9"/>
-  <g fill="#E10600">
-    <circle cx="784" cy="318" r="5"/><circle cx="949" cy="295" r="5"/>
+  <circle r="6" fill="#E10600" stroke="#FFFFFF" stroke-width="2">
+    <animateMotion dur="4s" repeatCount="indefinite" rotate="auto"><mpath href="#circuit"/></animateMotion>
+  </circle>
+  <text x="1240" y="378" text-anchor="end" class="mono" font-size="11" fill="#8B8D98" letter-spacing="2">CIRCUIT: PRODUCTION · 12 TURNS</text>
+  <text x="1205" y="106" class="mono" font-size="10" fill="#8B8D98">T1</text>
+  <text x="1124" y="292" class="mono" font-size="10" fill="#8B8D98">T7</text>
+  <text x="934" y="250" class="mono" font-size="10" fill="#8B8D98">T10</text>
+
+  <!-- telemetry strip -->
+  <rect x="40" y="356" width="880" height="52" rx="6" fill="#131316" stroke="#FFFFFF" stroke-opacity="0.06"/>
+  <g class="mono" font-size="11" fill="#8B8D98" letter-spacing="1.5">
+    <text x="60"  y="377">SPEED</text>
+    <text x="60"  y="397" fill="#FFFFFF" font-size="15">312 <tspan font-size="10" fill="#8B8D98">KM/H</tspan></text>
+    <text x="170" y="377">GEAR</text>
+    <text x="170" y="397" fill="#FFFFFF" font-size="15">8</text>
+    <text x="240" y="377">DRS</text>
+    <text x="240" y="397" fill="#00D9FF" font-size="15">OPEN</text>
+    <text x="320" y="377">ERS</text>
+    <g transform="translate(320 386)">
+      <rect width="9" height="12" fill="#E10600"/><rect x="12" width="9" height="12" fill="#E10600"/>
+      <rect x="24" width="9" height="12" fill="#E10600"/><rect x="36" width="9" height="12" fill="#E10600"/>
+      <rect x="48" width="9" height="12" fill="#3A3A42"/>
+    </g>
+    <text x="410" y="377">COFFEE</text>
+    <text x="410" y="397" fill="#FFFFFF" font-size="15">98%</text>
+    <text x="500" y="377">LAP</text>
+    <text x="500" y="397" fill="#FFFFFF" font-size="15">12 / ∞</text>
   </g>
-  <path d="M770 350h360" stroke="url(#redline)" stroke-width="2"/>
-  <g fill="#00D9FF" font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing="1.5">
-    <text x="788" y="372">LAP 01</text><text x="884" y="372">BUILD: STABLE*</text><text x="1038" y="372">*ENGINEER UNSURE</text>
+  <!-- throttle trace -->
+  <polyline points="600,400 650,398 662,372 668,370 680,396 700,398 716,368 748,366 760,390 780,394 796,370 830,368 842,396 860,398 876,372 900,370" fill="none" stroke="#E10600" stroke-width="2" stroke-linejoin="round"/>
+  <text x="600" y="376" class="mono" font-size="10" fill="#8B8D98" letter-spacing="1.5">THROTTLE</text>
+
+  <!-- live status -->
+  <circle cx="948" cy="396" r="4" fill="#E10600" class="blink"/>
+  <text x="1240" y="400" text-anchor="end" class="mono" font-size="11" fill="#FFFFFF" letter-spacing="1">LIVE · BUILDING SOMETHING INTERESTING</text>
+
+  <!-- bottom rail -->
+  <rect x="0" y="432" width="1280" height="8" fill="#E10600" opacity="0.9"/>
   </g>
 </svg>
