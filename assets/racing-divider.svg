@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="64" viewBox="0 0 1200 64" role="img" aria-labelledby="title desc">
+  <title id="title">Racing circuit divider</title>
+  <desc id="desc">A fine racing-red line with a minimalist abstract circuit and timing markers.</desc>
+  <path d="M0 32h340c18 0 22-22 42-22h40c18 0 24 22 44 22h218c18 0 22 22 42 22h42c18 0 22-22 42-22h390" fill="none" stroke="#E10600" stroke-width="2"/>
+  <path d="M0 32h340c18 0 22-22 42-22h40c18 0 24 22 44 22h218c18 0 22 22 42 22h42c18 0 22-22 42-22h390" fill="none" stroke="#E10600" stroke-width="1" stroke-dasharray="4 12" opacity=".55"/>
+  <circle cx="0" cy="32" r="5" fill="#E10600"/><circle cx="1200" cy="32" r="5" fill="#E10600"/>
+  <g fill="#8B8D98"><circle cx="228" cy="32" r="2"/><circle cx="820" cy="32" r="2"/><circle cx="1044" cy="32" r="2"/></g>
+</svg>

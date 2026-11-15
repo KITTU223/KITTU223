@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="140" height="140" viewBox="0 0 140 140" role="img" aria-labelledby="title desc">
+  <title id="title">Race number 12</title>
+  <desc id="desc">Krutonic driver number 12 in a red motorsport badge.</desc>
+  <path d="M10 10h88l32 32v88H10z" fill="#E10600"/>
+  <path d="M98 10v32h32" fill="#A80400"/>
+  <path d="M23 23h69l25 25v69H23z" fill="none" stroke="#FFFFFF" stroke-opacity=".45"/>
+  <text x="28" y="91" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="61" font-weight="800">12</text>
+  <text x="31" y="111" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="700" letter-spacing="2">DRIVER</text>
+</svg>

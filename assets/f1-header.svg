@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430" role="img" aria-labelledby="title desc">
+  <title id="title">Krutarth Chauhan — Krutonic Motorsport Division</title>
+  <desc id="desc">A carbon-black motorsport engineering dashboard with racing-red accents, telemetry details, number 12, and an abstract circuit line.</desc>
+  <defs>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M36 0H0V36" fill="none" stroke="#FFFFFF" stroke-opacity=".055" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="fade" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#0B0B0D"/>
+      <stop offset="1" stop-color="#17171C"/>
+    </linearGradient>
+    <linearGradient id="redline" x1="0" x2="1">
+      <stop offset="0" stop-color="#E10600" stop-opacity=".12"/>
+      <stop offset=".55" stop-color="#E10600"/>
+      <stop offset="1" stop-color="#E10600" stop-opacity=".22"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="430" rx="18" fill="url(#fade)"/>
+  <rect width="1200" height="430" rx="18" fill="url(#grid)"/>
+  <path d="M0 26H1200" stroke="#E10600" stroke-width="5"/>
+  <g stroke="#FFFFFF" stroke-opacity=".18" stroke-width="2">
+    <path d="M824 76h78M860 91h112M826 106h54M901 121h68M844 136h104"/>
+    <path d="M30 354h102M55 367h61M31 380h84"/>
+  </g>
+  <g fill="#8B8D98" font-family="Arial, Helvetica, sans-serif" font-size="11" letter-spacing="2">
+    <text x="52" y="65">KRUTONIC MOTORSPORT DIVISION</text>
+    <text x="52" y="396">FULL-STACK ENGINEERING  /  GUJARAT, INDIA</text>
+    <text x="864" y="66">ENGINEERING // 01</text>
+    <text x="1022" y="396">KRT-12  •  EST. IN CODE</text>
+  </g>
+  <path d="M52 82h286" stroke="#E10600" stroke-width="2"/>
+  <text x="48" y="174" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="800" letter-spacing="1">KRUTARTH</text>
+  <text x="48" y="232" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="800" letter-spacing="1">CHAUHAN</text>
+  <path d="M52 254h495" stroke="#E10600" stroke-width="4"/>
+  <text x="54" y="286" fill="#D7D7DC" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" letter-spacing="2">FULL-STACK DEVELOPER  |  CREATIVE ENGINEER</text>
+  <text x="54" y="328" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="15">“Writing code at full throttle. Debugging under the safety car.”</text>
+  <g transform="translate(1004 160)">
+    <path d="M0 20h82l27 27v111H0z" fill="#E10600"/>
+    <path d="M82 20v27h27" fill="#A80400"/>
+    <text x="12" y="112" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="76" font-weight="800">12</text>
+    <text x="14" y="141" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="700" letter-spacing="2">DRIVER</text>
+  </g>
+  <path d="M784 318c-8-35 22-50 47-42 29 9 18 42 46 48 32 7 39-27 21-43-17-15-44 1-41 22 4 25 43 20 61 5 19-17 1-44 20-58 18-13 48-5 49 17 1 17-11 27-27 28" fill="none" stroke="#FFFFFF" stroke-opacity=".8" stroke-width="3"/>
+  <path d="M784 318c-8-35 22-50 47-42 29 9 18 42 46 48 32 7 39-27 21-43-17-15-44 1-41 22 4 25 43 20 61 5 19-17 1-44 20-58 18-13 48-5 49 17 1 17-11 27-27 28" fill="none" stroke="#E10600" stroke-width="1" stroke-dasharray="3 9"/>
+  <g fill="#E10600">
+    <circle cx="784" cy="318" r="5"/><circle cx="949" cy="295" r="5"/>
+  </g>
+  <path d="M770 350h360" stroke="url(#redline)" stroke-width="2"/>
+  <g fill="#00D9FF" font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing="1.5">
+    <text x="788" y="372">LAP 01</text><text x="884" y="372">BUILD: STABLE*</text><text x="1038" y="372">*ENGINEER UNSURE</text>
+  </g>
+</svg>
